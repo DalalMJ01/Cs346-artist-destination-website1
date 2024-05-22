@@ -1,0 +1,166 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 190px;
+    width: 100%;
+    padding: 20px 100px;
+    background: transparent;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 99;
+}
+
+.ArtistDestination {
+    font-size: 2em;
+    color: #fff;
+    user-select: none;
+}
+
+.navigation a {
+    position: relative;
+    font-size: 1.1em;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 40px;
+}
+
+.navigation a::after {
+    content: ' ';
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 100%;
+    height: 3px;
+    background: #fff;
+    border-radius: 5px;
+    transform: scaleX(0);
+    transition: transform .5s;
+}
+
+.navigation a:hover:after {
+    transform: scaleX(1);
+    color: #000000;
+}
+
+.navigation .btnlogin {
+    width: 130px;
+    height: 50px;
+    background: transparent;
+    border: 2px solid #fff;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1.1em;
+    color: #fff;
+    font-weight: 500;
+    margin-left: 40px;
+    transition: .5s;
+}
+
+.navigation .btnlogin:hover {
+    background: #fff;
+    color: #080808;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url(artistic.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.msg {
+    background: transparent;
+    border: 2px solid rgb(255, 255, 255, .2);
+    backdrop-filter: blur(3px);
+    border-radius: 12px;
+    padding: 300px 200px;
+    margin-bottom: 20px;
+
+}
+
+.msg1 {
+    color: #fff;
+    text-align: center;
+    font-size: 90px;
+}
+
+.msg2 {
+    color: aliceblue;
+    text-align: center;
+    font-size: 40px;
+}
+
+.morebtn {
+    width: 130px;
+    height: 50px;
+    background: transparent;
+    border: 2px solid #fff;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1.1em;
+    color: #fff;
+    font-weight: 500;
+    margin-left: 350px;
+    transition: .5s;
+    align-items: center;
+}
+
+.morebtn:hover {
+    background: #fff;
+    color: #080808;
+}
+
+footer {
+    background: #002764d0;
+    backdrop-filter: blur(3px);
+    color: #ffffff;
+}
+
+footer p {
+    padding: 20px 0;
+    text-align: center;
+}
+
+.social-footer {
+    padding: 1rem;
+    background: #00165cc3;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+.social-footer .social-footer-icons li:last-of-type {
+    margin-right: 0;
+}
+
+.social-footer .social-footer-icons .fa {
+    font-size: 1.3rem;
+    color: #fefefe;
+}
+
+.social-footer .social-footer-icons .fa:hover {
+    color: #4a4a4a;
+    transition: color 0.3s ease-in;
+}
+
