@@ -1,0 +1,22 @@
+{
+  "name": "cs346-artist-destination-website1-master",
+  "version": "1.0.0",
+  "description": "website for user to learn art ",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DalalMJ01/Cs346-artist-destination-website1.git"
+  },
+  "author": "Dalal,Noura,ohoud,kinda",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DalalMJ01/Cs346-artist-destination-website1/issues"
+  },
+  "homepage": "https://github.com/DalalMJ01/Cs346-artist-destination-website1#readme",
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}
