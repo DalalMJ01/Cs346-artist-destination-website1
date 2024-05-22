@@ -77,14 +77,14 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: url(artistic.jpg) no-repeat;
+    background: url(images/wallpaper.jpeg) no-repeat;
     background-size: cover;
     background-position: center;
 }
 
 .msg {
     background: transparent;
-    border: 2px solid rgb(255, 255, 255, .2);
+    border: 2px solid rgba(255, 255, 255, 0);
     backdrop-filter: blur(3px);
     border-radius: 12px;
     padding: 300px 200px;
@@ -138,7 +138,7 @@ footer p {
 
 .social-footer {
     padding: 1rem;
-    background: #00165cc3;
+    background: #010b2cc3;
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;

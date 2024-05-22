@@ -79,7 +79,7 @@ body {
     align-items: center;
     min-height: 100vh;
     background-position: center;
-    background: url(artistic.jpg) no-repeat;
+    background: url(images/wallpaper.jpeg) no-repeat;
     background-size: 1500px 810px;
 
 }
@@ -212,7 +212,7 @@ section {
 
 
 .classes .about-section {
-    background: url(mona-lisa.jpg) no-repeat left;
+    background: url(images/mona-lisa.jpg) no-repeat left;
     background-size: 54%;
     background-color: #ffffff8c;
     overflow: hidden;
@@ -224,7 +224,7 @@ section {
 }
 
 .classes .about-section:hover {
-    background: url(mona-lisa.jpg) no-repeat left;
+    background: url(images/mona-lisa.jpg) no-repeat left;
     background-size: 63%;
     background-color: #ffffff8c;
     overflow: hidden;
@@ -236,7 +236,7 @@ section {
 }
 
 .classes .about-section2 {
-    background: url(yarn.png) no-repeat left;
+    background: url(images/yarn.png) no-repeat left;
     background-size: 50%;
     background-color: #ffffff8c;
     overflow: hidden;
@@ -247,7 +247,7 @@ section {
 }
 
 .classes .about-section2:hover {
-    background: url(yarn.png) no-repeat left;
+    background: url(images/yarn.png) no-repeat left;
     background-size: 60%;
     background-color: #ffffff8c;
     overflow: hidden;
@@ -449,7 +449,7 @@ section {
 }
 
 .classes .about-section1 {
-    background: url(pottery.jpg) no-repeat left;
+    background: url(images/pottery.jpg) no-repeat left;
     background-size: 50%;
     background-color: #ffffff8c;
     overflow: hidden;
@@ -460,7 +460,7 @@ section {
 }
 
 .classes .about-section1:hover {
-    background: url(pottery.jpg) no-repeat left;
+    background: url(images/pottery.jpg) no-repeat left;
     background-size: 60%;
     background-color: #ffffff8c;
     overflow: hidden;
