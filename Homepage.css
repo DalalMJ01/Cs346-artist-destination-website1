@@ -81,23 +81,39 @@ body {
     background-position: center;
     background: url(images/wallpaper.jpeg) no-repeat;
     background-size: 1500px 810px;
+    
 
 }
-
-.msg {
-
-    border: 2px solid rgb(255, 255, 255, .2);
+.welcom {
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, 0);
     backdrop-filter: blur(3px);
     border-radius: 12px;
     padding: 300px 200px;
     margin-bottom: 20px;
-    backdrop-filter: blur(3px);
-
-
 
 }
+.msg01 {
+    color: #fff;
+    text-align: center;
+    font-size: 90px;
+}
 
+.msg02 {
+    color: aliceblue;
+    text-align: center;
+    font-size: 40px;
+}
 
+.msg {
+    background-image: url(images/brown.jpeg);
+    border: 2px solid rgba(255, 255, 255, 0.034);
+    backdrop-filter: blur(3px);
+    border-radius: 12px;
+    padding: 300px 200px;
+    margin-bottom: 20px;
+   
+}
 
 .msg1 {
     color: #fff;
@@ -648,8 +664,6 @@ section {
 
 }
 
-
-
 footer {
     background: #002764d0;
     backdrop-filter: blur(3px);
@@ -660,10 +674,9 @@ footer p {
     padding: 20px 0;
     text-align: center;
 }
-
 .social-footer {
     padding: 1rem;
-    background: #00165cc3;
+    background: #061547c3;
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
@@ -682,8 +695,8 @@ footer p {
 .social-footer .social-footer-icons .fa {
     font-size: 1.3rem;
     color: #fefefe;
+   
 }
-
 .social-footer .social-footer-icons .fa:hover {
     color: #4a4a4a;
     transition: color 0.3s ease-in;
