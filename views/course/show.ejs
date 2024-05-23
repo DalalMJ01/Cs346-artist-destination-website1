@@ -1,5 +1,23 @@
 <%-include('../partials/header')-%>
 <%-include('../partials/navbar')-%>
-
-<h1>courses page </h1>
+<div class="container">
+    <%chunk.forEach((art)=>{%>
+    <div class="row mt-3">
+        <%art.forEach((Course)=>{%>
+        <div class="col-sm-6 col-md-4">
+            <div class="card">
+                
+                <div class="card-body">
+                  <h5 class="card-title"><%=Course.title%></h5>
+                  <p class="card-text"><%=Course.describtion%></p>
+                  <p><%=Course.location%></p>
+                  <p><%=Course.artist%></p>
+                  <a href="<%= '/art/'    + Course.id%>" class="btn btn-primary">Show More</a>
+                </div>
+              </div>
+        </div>
+        <%})%>
+    </div>
+    <%})%>
+</div>
 

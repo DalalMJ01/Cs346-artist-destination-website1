@@ -1,0 +1,28 @@
+<%-include('../partials/header')-%>
+<%-include('../partials/navbar')-%>
+
+<div class="container">
+    <div class="row">
+        
+        <div class="col-sm-9 offset-md-3">
+            <div class="card">
+                
+                <div class="card-body">
+                  <h5 class="card-title"><%=Course.title%></h5>
+                  <hr>
+                  <p class="card-text"><%=Course.description%></p>
+                  <p><%=Course.location%></p>
+                  <p><%=Course.artist%></p>
+                  <p><span><%=Course.date.toDateString()%></span></p>
+
+                  <a href=""  class="btn btn-primary">Edit</a>
+                  <button class="btn btn-danger" id="deleteBtn" data-id="<%=Course.id%>">Delete</button>
+                  
+                </div>
+              </div>
+        </div>
+            
+        </div>
+    </div>
+
+
