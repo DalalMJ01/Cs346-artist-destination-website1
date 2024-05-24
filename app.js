@@ -4,6 +4,8 @@ const db =require('./config/database')
 const bodyparser =require('body-parser')
 const session = require('express-session')
 const flash = require('connect-flash')
+const passport = require('passport')
+const passportSetup = require('./config/passport-setup')
 
 //ejs tamplete
 app.set('view engine','ejs')
@@ -22,12 +24,21 @@ app.use(session({
     cookie: {maxAge: 60000 * 15}
 }))
 app.use(flash())
+// bring passport 
+app.use(passport.initialize())
+app.use(passport.session())
+
+//store user object 
+
+app.get('*', (req,res,next)=> {
+    res.locals.user = req.user || null
+    next()
+})
+
 app.get('/', (req,res)=> {
 
     res.redirect('/art')
- })
-
- 
+ }) 
  // bring events routes
  const art = require('./routes/event-routes')
  app.use('/art', art)
