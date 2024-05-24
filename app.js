@@ -9,11 +9,11 @@ const flash = require('connect-flash')
 app.set('view engine','ejs')
 app.use(bodyparser.urlencoded({extended: false}))
 app.use(bodyparser.json())
-
 //bring static
 app.use(express.static('public'))
 app.use(express.static('images'))
 app.use(express.static('node_modules'))
+
 // session and flash config .
 app.use(session({
     secret: 'lorem ipsum',
@@ -24,13 +24,16 @@ app.use(session({
 app.use(flash())
 app.get('/', (req,res)=> {
 
-    res.send("it is working")
+    res.redirect('/art')
  })
 
  
  // bring events routes
  const art = require('./routes/event-routes')
  app.use('/art', art)
+  // bring user routes
+  const users = require('./routes/user-routes')
+  app.use('/users', users)
 
  // listen to port 3002
 app.listen(3002, ()=> {

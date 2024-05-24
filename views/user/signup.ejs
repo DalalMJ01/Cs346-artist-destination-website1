@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>signup</title>
+    <link rel="stylesheet" href="/css/login.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <header>
+        <h3 class ="ArtistDestination"></h3>
+        <nav class="navigation ">
+            
+            <a href="/art">Home</a>
+            <a href="/art/about">About</a>
+            <a href="/art/Show">Courses</a>
+            <a href="/art/create">Add Course</a>
+            <a href="/users/login">Login</a>
+        </nav>
+    </header>
+    <div class="wrapper">
+        <form action="/users/signup" method="post">
+            <h1>Signup</h1>
+            <div class="input-box">
+                <input type="text" name="email" id="email" placeholder="email" required>
+                <i class='bx bxs-user'></i>
+            </div>
+            <div class="input-box">
+                <input type="password" name="password" id="password" placeholder="Password" required>
+                <i class='bx bxs-lock'></i>
+            </div>
+            <div class="input-box">
+                <input type="password" name="confirrm-password" id="confirrm-password" placeholder="Confirrm Password" required>
+                <i class='bx bxs-lock'></i>
+            </div>
+
+            <button type="submit" class="btn">Sign Up</button>
+         
+        </form>
+    </div>
+</body>

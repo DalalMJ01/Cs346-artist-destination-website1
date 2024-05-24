@@ -10,9 +10,7 @@ router.get('/',(req,res)=> {
 router.get('/about',(req,res)=> {
     res.render('course/about')
 })
-router.get('/login',(req,res)=> {
-    res.render('course/login')
-})
+
 
 router.get('/show',(req,res)=> {
     Course.find({},(err,art)=>{
