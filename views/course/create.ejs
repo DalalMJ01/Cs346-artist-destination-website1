@@ -1,0 +1,38 @@
+<%-include('../partials/header')-%>
+<%-include('../partials/navbar')-%>
+<div class="container">
+    <div class="row">
+        <div class="col-sm-5 offset-md-1">
+            <%- include('../partials/flash') -%>
+            <form style="background-color: rgb(196, 156, 119)" action="/art/create" method="post" >
+                <div style="background-color: rgb(196, 156, 119)">
+                <div class="form-group">
+                    <label style="color: aliceblue" for="title" >Add Your Course Title</label>
+                    <textarea name="title" id="title" value=" Title" class="form-control"></textarea>
+                </div>
+                <div class="form-group">
+                    <label style="color: aliceblue;background-color: rgb(196, 156, 119);" for="description">Description</label>
+                    <textarea name="description" rows="4"class="form-control"></textarea>
+                </div>
+                <div class="form-group">
+                    <label style="color: aliceblue;background-color: rgb(196, 156, 119);" for="artist">Artist Name</label>
+                    <textarea  type="text" name="artist" id="artist"  class="form-control"></textarea>
+                </div>
+                <div class="form-group">
+                    <label style="color: aliceblue; background-color: rgb(196, 156, 119);"for="location">Location</label>
+                    <textarea name="location" id="location" class="form-control"></textarea>
+                </div>
+               
+                <div class="form-group">
+                    <button type="submit" class="btn btn-primary"> Create course </button>
+                </div>
+            </div>
+            </form>
+        
+              
+        </div>
+            
+    </div>
+</div>
+
+      

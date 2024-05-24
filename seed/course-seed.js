@@ -12,22 +12,6 @@ let newCourses = [
         date: Date.now(),
         
     }),
-    new Course({
-        title: 'portery class',
-        artist: 'Deema',
-        description:' learn ho to draw perfect ',
-        location: 'Al-riyadh',
-        date: Date.now(),
-        
-    }),
-    new Course({
-        title: 'Drawing plants',
-        artist: 'Mohammed',
-        description:' learn ho to draw perfect ',
-        location: 'Al-riyadh',
-        date: Date.now(),
-        
-    }),
 ]
 newCourses.forEach((Course)=>{
     Course.save( (err)=> {
