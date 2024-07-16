@@ -1,4 +1,4 @@
-# Cs346-artist-destination-website1
+# artist-destination-website
 
 ## Table of Contents
 * [Description](#Description)
